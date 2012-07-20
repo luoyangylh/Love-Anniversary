@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<title>
+			Together Days
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			
+			var meetDate = new Date("18 July 2009");
+			var todayDate = new Date();
+			document.write( todayDate.toString() + "<br>")
+			document.write( meetDate.toString() + "<br>" )
+			//var numToday = (todayDate.UTC());
+			//get the number of days that we get together
+			document.write( todayDate.getTime() + "<br>")
+			document.write( meetDate.getTime() + "<br>")
+			var numMiliseconds = (todayDate.getTime() - meetDate.getTime());
+			var numDate = numMiliseconds/1000/60/60/24;
+			document.write(Math.ceil(numDate) + "<br>")
+			//write our dick names
+			document.write('luoyangylh & teethfish' + "<br>")
+
+		</script>
+	</body>
+</html>

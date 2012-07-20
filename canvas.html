@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+
+<!--允许全屏-->
+<meta content="yes" name="apple-mobile-web-app-capable"/>
+<meta content="yes" name="apple-touch-fullscreen"/>
+
+<!--禁止电话号码和邮箱识别-->
+<meta content="telephone=no,email=no" name="format-detection"/>
+
+<!--TODO:添加一个ios用的icon-->
+<link rel="apple-touch-icon" href="favicon.png"/>
+<link rel="Shortcut Icon" href="favicon.png" type="image/x-icon" />
+
+<!--TODO:添加一个网页标题-->
+<title>A sample of HTML5 game</title>
+
+<!--TODO:改成你想要的缩放比例-->
+<meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=0.5, minimum-scale=0.5, user-scalable=no" />
+
+
+<style type="text/css">
+html,body {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    width:100%;
+    height:100%;
+}
+body {
+    display:-webkit-box;
+    -webkit-box-orient: horizontal;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    text-align:center;
+    cursor:default;
+}
+* {
+    -webkit-text-size-adjust:none;
+}
+</style>
+
+<script type="text/javascript">
+    //关闭选择
+    document.addEventListener("selectstart",function(e){ e.preventDefault(); });
+    //避免鼠标变成文本选择形状
+    document.addEventListener("mousedown",function(e){ e.preventDefault(); });
+    //避免上下滚屏
+    document.addEventListener("touchmove",function(e){ e.preventDefault(); });
+
+</script>
+</head>
+<body>
+    <canvas id="main" width="400" height="200"></canvas>
+    <script type="text/javascript">
+        //TODO:此处开始编写游戏初始化代码
+        var context = document.querySelector("#main").getContext("2d");
+        context.fillRect(0,0,400,200);
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<html>
+	<head>form1</head>
+	<body>
+		<div id = div1>
+			<script type="text/javascript">
+				var meetDate = new Date("18 July 2009");
+				var todayDate = new Date();
+				document.write( todayDate.toString() + "<br>")
+				document.write( meetDate.toString() + "<br>" )
+				//var numToday = (todayDate.UTC());
+				//get the number of days that we get together
+				document.write( todayDate.getTime() + "<br>")
+				document.write( meetDate.getTime() + "<br>")
+				var numMiliseconds = (todayDate.getTime() - meetDate.getTime());
+				var numDate = numMiliseconds/1000/60/60/24;
+				document.write(Math.ceil(numDate) + "<br>")
+				//write our dick names
+				document.write('luoyangylh & teethfish' + "<br>")
+
+			</script>
+		</div>
+		<div id = random_pic>
+			<script type="text/javascript">
+			var bannerImage = new Array();
+			bannerImage[0] = "C:\\Users\\Public\\Pictures\\Sample Pictures\\flower.jpg";
+			bannerImage[1] = "C:\\Users\\Public\\Pictures\\Sample Pictures\\hill.jpg";
+			bannerImage[2] = "7c7d8939gw1dspii408huj.jpg";
+			var randomImageIndex = Math.round(Math.random() * 2);
+			document.write("<img alt=\"\" src=\"" + bannerImage[randomImageIndex] + "\"/>")
+
+		</script>
+		</div>
+	</body>
+</html>

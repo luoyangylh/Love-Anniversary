@@ -1,0 +1,17 @@
+<html>
+	<head>
+		<title>random picture</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var bannerImage = new Array();
+			bannerImage[0] = "C:\\Users\\Public\\Pictures\\Sample Pictures\\flower.jpg";
+			bannerImage[1] = "C:\\Users\\Public\\Pictures\\Sample Pictures\\hill.jpg";
+			bannerImage[2] = "7c7d8939gw1dspii408huj.jpg";
+			var randomImageIndex = Math.round(Math.random() * 2);
+			document.write("<img alt=\"\" src=\"" + bannerImage[randomImageIndex] + "\"/>")
+
+		</script>
+		<img src="flower.jpg" alt="">
+	</body>
+</html>
